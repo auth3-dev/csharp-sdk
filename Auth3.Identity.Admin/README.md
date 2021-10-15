@@ -1,4 +1,4 @@
-# Auth3 C# SDK
+# Auth3 .NET SDK
 
 The official [Auth3](https://auth3.dev/?utm_source=github&utm_medium=sdk&utm_campaign=csharp) c# SDK library.
 
@@ -8,32 +8,25 @@ Check-out the API documentation at [https://docs.auth3.dev/apis/identity-platfor
 
 ## Installation
 
-Please check sub-folders' README.md for additional installation instructions, selecting the library you wish to use.
+Through the package manager:
 
-## Build
-
-To build the project from within the root folder, run: 
-
-```bash
-dotnet build
+```
+Install-Package Auth3.Identity.Admin -Version 1.0.0
 ```
 
-You should receive something like the following:
+Through .NET CLI:
 
-```bash
-Microsoft (R) Build Engine version 16.9.0+5e4b48a27 for .NET
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-  Determining projects to restore...
-  Restored github.com/auth3-dev/csharp-sdk/Auth3.Identity.Admin/Admin.csproj (in 224 ms).
-  Admin -> github.com/auth3-dev/csharp-sdk/Auth3.Identity.Admin/bin/Debug/net5.0/Admin.dll
-
-Build succeeded.
-    0 Warning(s)
-    0 Error(s)
-
-Time Elapsed 00:00:02.34
 ```
+dotnet add package Auth3.Identity.Admin --version 1.0.0
+```
+
+For projects that support PackageReference, copy this XML node into the project file to reference the package:
+
+```
+<PackageReference Include="Auth3.Identity.Admin" Version="1.0.0" />
+```
+
+Check-out the package's [nuget listing](https://www.nuget.org/packages/Auth3.Identity.Admin) for more options.
 
 ## Additional help
 
@@ -66,4 +59,4 @@ Customers of the Auth3 Identity Platform can access support through the official
 
 ## License
 
-Read the [LICENSE](./LICENSE).
+Read the [LICENSE](../LICENSE).

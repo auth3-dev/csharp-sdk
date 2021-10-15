@@ -2,10 +2,11 @@
   <PropertyGroup>
     <Authors>Auth3.dev</Authors>
     <Copyright>Copyright 2021-present Auth3.dev</Copyright>
-    <Description>Auth3 Administrative API C#</Description>
+    <Description>The official https://auth3.dev/ Administrative API SDK</Description>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/auth3-dev/csharp-sdk</PackageProjectUrl>
-    <PackageTags>Auth3 Authentication Identity</PackageTags>
+    <PackageTags>Auth3, Authentication, Security, Authorization, Identity management</PackageTags>
+    <PackageId>Auth3.Identity.Admin</PackageId>
     <VersionPrefix>$(GrpcCsharpVersion)</VersionPrefix>
   </PropertyGroup>
 
