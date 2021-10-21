@@ -9,7 +9,7 @@
     <RepositoryType>git</RepositoryType> 
     <PackageTags>Auth3, Authentication, Security, Authorization, Identity management</PackageTags>
     <PackageId>Auth3.Identity.Admin</PackageId>
-    <VersionPrefix>$(GrpcCsharpVersion)</VersionPrefix>
+    <VersionPrefix>1.0.1</VersionPrefix>
   </PropertyGroup>
 
   <PropertyGroup>
