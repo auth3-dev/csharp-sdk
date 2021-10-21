@@ -3,13 +3,14 @@
     <Authors>Auth3.dev</Authors>
     <Copyright>Copyright 2021-present Auth3.dev</Copyright>
     <Description>The official https://auth3.dev/ Administrative API SDK</Description>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/auth3-dev/csharp-sdk</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://auth3.dev/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/auth3-dev/csharp-sdk.git</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType> 
     <PackageTags>Auth3, Authentication, Security, Authorization, Identity management</PackageTags>
     <PackageId>Auth3.Identity.Admin</PackageId>
     <VersionPrefix>$(GrpcCsharpVersion)</VersionPrefix>
   </PropertyGroup>
-
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -19,6 +20,7 @@
     <PackageReference Include="Google.Protobuf" Version="3.18.0" />
     <PackageReference Include="Grpc" Version="2.41.0" />
     <PackageReference Include="Grpc.Tools" Version="2.41.0" PrivateAssets="all" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>
