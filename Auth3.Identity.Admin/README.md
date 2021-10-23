@@ -11,19 +11,19 @@ Check-out the API documentation at [https://docs.auth3.dev/apis/identity-platfor
 Through the package manager:
 
 ```
-Install-Package Auth3.Identity.Admin -Version 1.0.0
+Install-Package Auth3.Identity.Admin -Version 1.0.1
 ```
 
 Through .NET CLI:
 
 ```
-dotnet add package Auth3.Identity.Admin --version 1.0.0
+dotnet add package Auth3.Identity.Admin --version 1.0.1
 ```
 
 For projects that support PackageReference, copy this XML node into the project file to reference the package:
 
 ```
-<PackageReference Include="Auth3.Identity.Admin" Version="1.0.0" />
+<PackageReference Include="Auth3.Identity.Admin" Version="1.0.1" />
 ```
 
 Check-out the package's [nuget listing](https://www.nuget.org/packages/Auth3.Identity.Admin) for more options.
