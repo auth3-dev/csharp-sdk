@@ -54,6 +54,10 @@ namespace Auth3.Identity.Admin {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Auth3.Identity.Admin.GetIdentityResponse> __Marshaller_depot_devtools_auth_v0_identity_admin_GetIdentityResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.GetIdentityResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Auth3.Identity.Admin.GetIdentityByIdentifierRequest> __Marshaller_depot_devtools_auth_v0_identity_admin_GetIdentityByIdentifierRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.GetIdentityByIdentifierRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Auth3.Identity.Admin.GetIdentityByIdentifierResponse> __Marshaller_depot_devtools_auth_v0_identity_admin_GetIdentityByIdentifierResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.GetIdentityByIdentifierResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Auth3.Identity.Admin.GetIdentitiesByAttributeRequest> __Marshaller_depot_devtools_auth_v0_identity_admin_GetIdentitiesByAttributeRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.GetIdentitiesByAttributeRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Auth3.Identity.Admin.GetIdentitiesByAttributeResponse> __Marshaller_depot_devtools_auth_v0_identity_admin_GetIdentitiesByAttributeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.GetIdentitiesByAttributeResponse.Parser));
@@ -189,6 +193,14 @@ namespace Auth3.Identity.Admin {
         "GetIdentity",
         __Marshaller_depot_devtools_auth_v0_identity_admin_GetIdentityRequest,
         __Marshaller_depot_devtools_auth_v0_identity_admin_GetIdentityResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Auth3.Identity.Admin.GetIdentityByIdentifierRequest, global::Auth3.Identity.Admin.GetIdentityByIdentifierResponse> __Method_GetIdentityByIdentifier = new grpc::Method<global::Auth3.Identity.Admin.GetIdentityByIdentifierRequest, global::Auth3.Identity.Admin.GetIdentityByIdentifierResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetIdentityByIdentifier",
+        __Marshaller_depot_devtools_auth_v0_identity_admin_GetIdentityByIdentifierRequest,
+        __Marshaller_depot_devtools_auth_v0_identity_admin_GetIdentityByIdentifierResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Auth3.Identity.Admin.GetIdentitiesByAttributeRequest, global::Auth3.Identity.Admin.GetIdentitiesByAttributeResponse> __Method_GetIdentitiesByAttribute = new grpc::Method<global::Auth3.Identity.Admin.GetIdentitiesByAttributeRequest, global::Auth3.Identity.Admin.GetIdentitiesByAttributeResponse>(
@@ -453,6 +465,12 @@ namespace Auth3.Identity.Admin {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Auth3.Identity.Admin.GetIdentityByIdentifierResponse> GetIdentityByIdentifier(global::Auth3.Identity.Admin.GetIdentityByIdentifierRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Auth3.Identity.Admin.GetIdentitiesByAttributeResponse> GetIdentitiesByAttribute(global::Auth3.Identity.Admin.GetIdentitiesByAttributeRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -700,6 +718,26 @@ namespace Auth3.Identity.Admin {
       public virtual grpc::AsyncUnaryCall<global::Auth3.Identity.Admin.GetIdentityResponse> GetIdentityAsync(global::Auth3.Identity.Admin.GetIdentityRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetIdentity, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Auth3.Identity.Admin.GetIdentityByIdentifierResponse GetIdentityByIdentifier(global::Auth3.Identity.Admin.GetIdentityByIdentifierRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetIdentityByIdentifier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Auth3.Identity.Admin.GetIdentityByIdentifierResponse GetIdentityByIdentifier(global::Auth3.Identity.Admin.GetIdentityByIdentifierRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetIdentityByIdentifier, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Auth3.Identity.Admin.GetIdentityByIdentifierResponse> GetIdentityByIdentifierAsync(global::Auth3.Identity.Admin.GetIdentityByIdentifierRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetIdentityByIdentifierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Auth3.Identity.Admin.GetIdentityByIdentifierResponse> GetIdentityByIdentifierAsync(global::Auth3.Identity.Admin.GetIdentityByIdentifierRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetIdentityByIdentifier, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Auth3.Identity.Admin.GetIdentitiesByAttributeResponse GetIdentitiesByAttribute(global::Auth3.Identity.Admin.GetIdentitiesByAttributeRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -1317,6 +1355,7 @@ namespace Auth3.Identity.Admin {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_CreateIdentity, serviceImpl.CreateIdentity)
           .AddMethod(__Method_GetIdentity, serviceImpl.GetIdentity)
+          .AddMethod(__Method_GetIdentityByIdentifier, serviceImpl.GetIdentityByIdentifier)
           .AddMethod(__Method_GetIdentitiesByAttribute, serviceImpl.GetIdentitiesByAttribute)
           .AddMethod(__Method_GetIdentities, serviceImpl.GetIdentities)
           .AddMethod(__Method_UpdateIdentity, serviceImpl.UpdateIdentity)
@@ -1358,6 +1397,7 @@ namespace Auth3.Identity.Admin {
     {
       serviceBinder.AddMethod(__Method_CreateIdentity, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.CreateIdentityRequest, global::Auth3.Identity.Admin.CreateIdentityResponse>(serviceImpl.CreateIdentity));
       serviceBinder.AddMethod(__Method_GetIdentity, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.GetIdentityRequest, global::Auth3.Identity.Admin.GetIdentityResponse>(serviceImpl.GetIdentity));
+      serviceBinder.AddMethod(__Method_GetIdentityByIdentifier, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.GetIdentityByIdentifierRequest, global::Auth3.Identity.Admin.GetIdentityByIdentifierResponse>(serviceImpl.GetIdentityByIdentifier));
       serviceBinder.AddMethod(__Method_GetIdentitiesByAttribute, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.GetIdentitiesByAttributeRequest, global::Auth3.Identity.Admin.GetIdentitiesByAttributeResponse>(serviceImpl.GetIdentitiesByAttribute));
       serviceBinder.AddMethod(__Method_GetIdentities, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.GetIdentitiesRequest, global::Auth3.Identity.Admin.GetIdentitiesResponse>(serviceImpl.GetIdentities));
       serviceBinder.AddMethod(__Method_UpdateIdentity, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.UpdateIdentityRequest, global::Auth3.Identity.Admin.UpdateIdentityResponse>(serviceImpl.UpdateIdentity));
