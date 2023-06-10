@@ -86,13 +86,13 @@ namespace Auth3.Identity.Admin {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Auth3.Identity.Admin.UpdateAddressResponse> __Marshaller_depot_devtools_auth_v0_identity_admin_UpdateAddressResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.UpdateAddressResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Auth3.Identity.Admin.GetTraitsRequest> __Marshaller_depot_devtools_auth_v0_identity_admin_GetTraitsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.GetTraitsRequest.Parser));
+    static readonly grpc::Marshaller<global::Auth3.Identity.Admin.GetProfileRequest> __Marshaller_depot_devtools_auth_v0_identity_admin_GetProfileRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.GetProfileRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Auth3.Identity.Admin.GetTraitsResponse> __Marshaller_depot_devtools_auth_v0_identity_admin_GetTraitsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.GetTraitsResponse.Parser));
+    static readonly grpc::Marshaller<global::Auth3.Identity.Admin.GetProfileResponse> __Marshaller_depot_devtools_auth_v0_identity_admin_GetProfileResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.GetProfileResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Auth3.Identity.Admin.UpdateTraitsRequest> __Marshaller_depot_devtools_auth_v0_identity_admin_UpdateTraitsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.UpdateTraitsRequest.Parser));
+    static readonly grpc::Marshaller<global::Auth3.Identity.Admin.UpdateProfileRequest> __Marshaller_depot_devtools_auth_v0_identity_admin_UpdateProfileRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.UpdateProfileRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Auth3.Identity.Admin.UpdateTraitsResponse> __Marshaller_depot_devtools_auth_v0_identity_admin_UpdateTraitsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.UpdateTraitsResponse.Parser));
+    static readonly grpc::Marshaller<global::Auth3.Identity.Admin.UpdateProfileResponse> __Marshaller_depot_devtools_auth_v0_identity_admin_UpdateProfileResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.UpdateProfileResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Auth3.Identity.Admin.GetCredentialsRequest> __Marshaller_depot_devtools_auth_v0_identity_admin_GetCredentialsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Auth3.Identity.Admin.GetCredentialsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -259,20 +259,20 @@ namespace Auth3.Identity.Admin {
         __Marshaller_depot_devtools_auth_v0_identity_admin_UpdateAddressResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Auth3.Identity.Admin.GetTraitsRequest, global::Auth3.Identity.Admin.GetTraitsResponse> __Method_GetTraits = new grpc::Method<global::Auth3.Identity.Admin.GetTraitsRequest, global::Auth3.Identity.Admin.GetTraitsResponse>(
+    static readonly grpc::Method<global::Auth3.Identity.Admin.GetProfileRequest, global::Auth3.Identity.Admin.GetProfileResponse> __Method_GetProfile = new grpc::Method<global::Auth3.Identity.Admin.GetProfileRequest, global::Auth3.Identity.Admin.GetProfileResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetTraits",
-        __Marshaller_depot_devtools_auth_v0_identity_admin_GetTraitsRequest,
-        __Marshaller_depot_devtools_auth_v0_identity_admin_GetTraitsResponse);
+        "GetProfile",
+        __Marshaller_depot_devtools_auth_v0_identity_admin_GetProfileRequest,
+        __Marshaller_depot_devtools_auth_v0_identity_admin_GetProfileResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Auth3.Identity.Admin.UpdateTraitsRequest, global::Auth3.Identity.Admin.UpdateTraitsResponse> __Method_UpdateTraits = new grpc::Method<global::Auth3.Identity.Admin.UpdateTraitsRequest, global::Auth3.Identity.Admin.UpdateTraitsResponse>(
+    static readonly grpc::Method<global::Auth3.Identity.Admin.UpdateProfileRequest, global::Auth3.Identity.Admin.UpdateProfileResponse> __Method_UpdateProfile = new grpc::Method<global::Auth3.Identity.Admin.UpdateProfileRequest, global::Auth3.Identity.Admin.UpdateProfileResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "UpdateTraits",
-        __Marshaller_depot_devtools_auth_v0_identity_admin_UpdateTraitsRequest,
-        __Marshaller_depot_devtools_auth_v0_identity_admin_UpdateTraitsResponse);
+        "UpdateProfile",
+        __Marshaller_depot_devtools_auth_v0_identity_admin_UpdateProfileRequest,
+        __Marshaller_depot_devtools_auth_v0_identity_admin_UpdateProfileResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Auth3.Identity.Admin.GetCredentialsRequest, global::Auth3.Identity.Admin.GetCredentialsResponse> __Method_GetCredentials = new grpc::Method<global::Auth3.Identity.Admin.GetCredentialsRequest, global::Auth3.Identity.Admin.GetCredentialsResponse>(
@@ -513,13 +513,13 @@ namespace Auth3.Identity.Admin {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Auth3.Identity.Admin.GetTraitsResponse> GetTraits(global::Auth3.Identity.Admin.GetTraitsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Auth3.Identity.Admin.GetProfileResponse> GetProfile(global::Auth3.Identity.Admin.GetProfileRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Auth3.Identity.Admin.UpdateTraitsResponse> UpdateTraits(global::Auth3.Identity.Admin.UpdateTraitsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Auth3.Identity.Admin.UpdateProfileResponse> UpdateProfile(global::Auth3.Identity.Admin.UpdateProfileRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -880,44 +880,44 @@ namespace Auth3.Identity.Admin {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateAddress, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Auth3.Identity.Admin.GetTraitsResponse GetTraits(global::Auth3.Identity.Admin.GetTraitsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Auth3.Identity.Admin.GetProfileResponse GetProfile(global::Auth3.Identity.Admin.GetProfileRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetTraits(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetProfile(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Auth3.Identity.Admin.GetTraitsResponse GetTraits(global::Auth3.Identity.Admin.GetTraitsRequest request, grpc::CallOptions options)
+      public virtual global::Auth3.Identity.Admin.GetProfileResponse GetProfile(global::Auth3.Identity.Admin.GetProfileRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetTraits, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetProfile, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Auth3.Identity.Admin.GetTraitsResponse> GetTraitsAsync(global::Auth3.Identity.Admin.GetTraitsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Auth3.Identity.Admin.GetProfileResponse> GetProfileAsync(global::Auth3.Identity.Admin.GetProfileRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetTraitsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetProfileAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Auth3.Identity.Admin.GetTraitsResponse> GetTraitsAsync(global::Auth3.Identity.Admin.GetTraitsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Auth3.Identity.Admin.GetProfileResponse> GetProfileAsync(global::Auth3.Identity.Admin.GetProfileRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetTraits, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetProfile, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Auth3.Identity.Admin.UpdateTraitsResponse UpdateTraits(global::Auth3.Identity.Admin.UpdateTraitsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Auth3.Identity.Admin.UpdateProfileResponse UpdateProfile(global::Auth3.Identity.Admin.UpdateProfileRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return UpdateTraits(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return UpdateProfile(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Auth3.Identity.Admin.UpdateTraitsResponse UpdateTraits(global::Auth3.Identity.Admin.UpdateTraitsRequest request, grpc::CallOptions options)
+      public virtual global::Auth3.Identity.Admin.UpdateProfileResponse UpdateProfile(global::Auth3.Identity.Admin.UpdateProfileRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_UpdateTraits, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateProfile, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Auth3.Identity.Admin.UpdateTraitsResponse> UpdateTraitsAsync(global::Auth3.Identity.Admin.UpdateTraitsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Auth3.Identity.Admin.UpdateProfileResponse> UpdateProfileAsync(global::Auth3.Identity.Admin.UpdateProfileRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return UpdateTraitsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return UpdateProfileAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Auth3.Identity.Admin.UpdateTraitsResponse> UpdateTraitsAsync(global::Auth3.Identity.Admin.UpdateTraitsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Auth3.Identity.Admin.UpdateProfileResponse> UpdateProfileAsync(global::Auth3.Identity.Admin.UpdateProfileRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_UpdateTraits, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateProfile, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Auth3.Identity.Admin.GetCredentialsResponse GetCredentials(global::Auth3.Identity.Admin.GetCredentialsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -1363,8 +1363,8 @@ namespace Auth3.Identity.Admin {
           .AddMethod(__Method_GetAddresses, serviceImpl.GetAddresses)
           .AddMethod(__Method_GetAddress, serviceImpl.GetAddress)
           .AddMethod(__Method_UpdateAddress, serviceImpl.UpdateAddress)
-          .AddMethod(__Method_GetTraits, serviceImpl.GetTraits)
-          .AddMethod(__Method_UpdateTraits, serviceImpl.UpdateTraits)
+          .AddMethod(__Method_GetProfile, serviceImpl.GetProfile)
+          .AddMethod(__Method_UpdateProfile, serviceImpl.UpdateProfile)
           .AddMethod(__Method_GetCredentials, serviceImpl.GetCredentials)
           .AddMethod(__Method_UpdateCredential, serviceImpl.UpdateCredential)
           .AddMethod(__Method_GetIdentityLoginAttempts, serviceImpl.GetIdentityLoginAttempts)
@@ -1405,8 +1405,8 @@ namespace Auth3.Identity.Admin {
       serviceBinder.AddMethod(__Method_GetAddresses, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.GetAddressesRequest, global::Auth3.Identity.Admin.GetAddressesResponse>(serviceImpl.GetAddresses));
       serviceBinder.AddMethod(__Method_GetAddress, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.GetAddressRequest, global::Auth3.Identity.Admin.GetAddressResponse>(serviceImpl.GetAddress));
       serviceBinder.AddMethod(__Method_UpdateAddress, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.UpdateAddressRequest, global::Auth3.Identity.Admin.UpdateAddressResponse>(serviceImpl.UpdateAddress));
-      serviceBinder.AddMethod(__Method_GetTraits, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.GetTraitsRequest, global::Auth3.Identity.Admin.GetTraitsResponse>(serviceImpl.GetTraits));
-      serviceBinder.AddMethod(__Method_UpdateTraits, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.UpdateTraitsRequest, global::Auth3.Identity.Admin.UpdateTraitsResponse>(serviceImpl.UpdateTraits));
+      serviceBinder.AddMethod(__Method_GetProfile, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.GetProfileRequest, global::Auth3.Identity.Admin.GetProfileResponse>(serviceImpl.GetProfile));
+      serviceBinder.AddMethod(__Method_UpdateProfile, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.UpdateProfileRequest, global::Auth3.Identity.Admin.UpdateProfileResponse>(serviceImpl.UpdateProfile));
       serviceBinder.AddMethod(__Method_GetCredentials, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.GetCredentialsRequest, global::Auth3.Identity.Admin.GetCredentialsResponse>(serviceImpl.GetCredentials));
       serviceBinder.AddMethod(__Method_UpdateCredential, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.UpdateCredentialRequest, global::Auth3.Identity.Admin.UpdateCredentialResponse>(serviceImpl.UpdateCredential));
       serviceBinder.AddMethod(__Method_GetIdentityLoginAttempts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Auth3.Identity.Admin.GetIdentityLoginAttemptsRequest, global::Auth3.Identity.Admin.GetIdentityLoginAttemptsResponse>(serviceImpl.GetIdentityLoginAttempts));
